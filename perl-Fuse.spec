@@ -1,12 +1,12 @@
 %define	module	Fuse
 %define	name	perl-%{module}
 %define	version	0.06
-%define	release	%mkrel 3
+%define	rel	4
 
 Name:		%{name}
 Summary:	Fuse module for perl
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel %{rel}
 License:	GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
