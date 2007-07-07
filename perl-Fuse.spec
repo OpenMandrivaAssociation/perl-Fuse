@@ -1,7 +1,7 @@
 %define	module	Fuse
 %define	name	perl-%{module}
-%define	version	0.06
-%define	rel	4
+%define	version	0.08
+%define	rel	1
 
 Name:		%{name}
 Summary:	Fuse module for perl
