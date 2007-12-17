@@ -14,7 +14,6 @@ Source0:	http://search.cpan.org/CPAN/authors/id/D/DP/DPAVLIN/%{module}-%{version
 BuildRequires:	perl-devel
 BuildRequires:  fuse-devel
 BuildRequires:  fuse
-Buildroot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This lets you implement filesystems in perl, through the FUSE (Filesystem in
