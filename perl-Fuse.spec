@@ -1,15 +1,15 @@
 %define	upstream_name	 Fuse
-%define	upstream_version 0.13
+%define upstream_version 0.15
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Version:    %perl_convert_version 0.15
+Release:	1
 
 Summary:	Write filesystems in Perl using FUSE
 License:	GPLv2+
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DP/DPAVLIN/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/D/DP/DPAVLIN/Fuse-0.15.tar.gz
 
 BuildRequires:  fuse-devel
 BuildRequires:  fuse
@@ -98,7 +98,7 @@ rm -rf %{buildroot}
 - use %%rel
 
 
-* Mon Jan 23 2006 Nicolas L�cureuil <neoclust@mandriva.org> 0.06-3mdk
+* Mon Jan 23 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.06-3mdk
 - Add BuildRequires
 
 * Fri Jan 06 2006 Per Øyvind Karlsen <pkarlsen@mandriva.com> 0.06-2mdk
@@ -106,4 +106,5 @@ rm -rf %{buildroot}
 
 * Fri Jan 06 2006 Per Øyvind Karlsen <pkarlsen@mandriva.com> 0.06-1mdk
 - initial Mandriva release
+
 
