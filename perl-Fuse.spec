@@ -11,7 +11,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	https://cpan.metacpan.org/authors/id/D/DP/DPATES/Fuse-%{upstream_version}.tar.gz
 
-BuildRequires:  pkgconfig(fuse3)
+BuildRequires:  pkgconfig(fuse)
 BuildRequires:  fuse
 BuildRequires:	perl-devel
 Buildroot:      %{_tmppath}/%{name}-%{version}-%{release}
