@@ -1,15 +1,15 @@
 %define	upstream_name	 Fuse
-%define upstream_version 0.15
+%define upstream_version 0.16
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 0.15
-Release:	3
+Release:	1
 
 Summary:	Write filesystems in Perl using FUSE
 License:	GPLv2+
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/authors/id/D/DP/DPAVLIN/Fuse-0.15.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DP/DPATES/Fuse-%{upstream_version}.tar.gz
 
 BuildRequires:  fuse-devel
 BuildRequires:  fuse
@@ -25,14 +25,11 @@ USErspace) kernel/lib interface.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
-%check
-#%make test
+%make_build
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std
+%make_install
 
 %clean
 rm -rf %{buildroot} 
