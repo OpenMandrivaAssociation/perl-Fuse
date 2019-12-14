@@ -2,7 +2,7 @@
 %define upstream_version 0.16
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 0.15
+Version:    %perl_convert_version 0.16
 Release:	1
 
 Summary:	Write filesystems in Perl using FUSE
