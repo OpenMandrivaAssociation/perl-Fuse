@@ -8,7 +8,7 @@ Release:	1
 Summary:	Write filesystems in Perl using FUSE
 License:	GPLv2+
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	https://cpan.metacpan.org/authors/id/D/DP/DPATES/Fuse-%{upstream_version}.tar.gz
 
 BuildRequires:  pkgconfig(fuse)
